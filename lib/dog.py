@@ -26,3 +26,18 @@ class Dog:
         else:
             print("Name must be a string between 1 and 25 characters.\n")
 
+    # name = property(get_name, set_name)
+
+    def get_breed(self):
+        return self.breed
+    
+    def set_breed(self, breed):
+        if (breed in APPROVED_BREEDS):
+            self._breed = breed
+        else:
+            print("Breed must be in list of approved breeds.\n")
+
+    # breed = property(get_breed, set_breed)
+
+
+
